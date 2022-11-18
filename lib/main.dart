@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,10 +11,14 @@ class MyApp extends StatelessWidget {
       title: "Flutter Tutorial",
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter Text Widget Tutorial"),
+          title: const Text(
+            "Flutter Text Widget Tutorial",
+          ),
         ),
         body: const Center(
-          child: Text("Hello World! This is a text widget"),
+          child: Text(
+            "Hello World! This is a text widget",
+          ),
         ),
       ),
     );
